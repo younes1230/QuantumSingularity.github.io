@@ -4,64 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Quantum Singularity AI</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <style>
-        body {
-            background: linear-gradient(135deg, #0f172a, #1e3a8a);
-            color: white;
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            max-width: 900px;
-        }
-        .btn-primary {
-            background-color: #facc15;
-            color: #000;
-            font-weight: bold;
-        }
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #020c1b; color: #fff; text-align: center; }
+        header { padding: 30px; background: linear-gradient(90deg, #004d99, #001f3f); }
+        h1 { font-size: 2.5em; }
+        .content { max-width: 800px; margin: 20px auto; line-height: 1.6; }
+        .button { background: #ffcc00; color: #000; padding: 15px 25px; text-decoration: none; font-weight: bold; border-radius: 5px; display: inline-block; margin-top: 20px; }
+        .contact-form { margin-top: 30px; }
+        input, textarea { width: 100%; padding: 10px; margin: 10px 0; border-radius: 5px; border: none; }
+        .footer { margin-top: 30px; padding: 20px; background: #001f3f; font-size: 0.9em; }
+        .links { margin-top: 20px; }
+        .links a { color: #ffcc00; text-decoration: none; display: block; }
     </style>
 </head>
 <body>
-    <div class="container text-center py-5">
+    <header>
         <h1>Quantum Singularity AI</h1>
         <p>Exploring the Future of AI & Quantum Computing</p>
-        <a href="#contact" class="btn btn-primary">Get in Touch</a>
-    </div>
-    
-    <div class="container my-5">
-        <h2>Our Vision</h2>
-        <p>Quantum Singularity AI is at the frontier of Artificial General Intelligence (AGI) and Quantum Computing. Our research explores how quantum mechanics can accelerate AI models, leading to breakthroughs in machine learning, cryptography, and scientific discovery.</p>
-    </div>
-
-    <div class="container my-5">
-        <h2>Scientific Publications</h2>
-        <ul>
-            <li><a href="https://arxiv.org/abs/2310.12345" target="_blank">Quantum-enhanced AI Models - arXiv</a></li>
-            <li><a href="https://www.nature.com/articles/s41586-023-06471-4" target="_blank">The Future of Quantum AI - Nature</a></li>
-            <li><a href="https://ieeexplore.ieee.org/document/1234567" target="_blank">IEEE Study on AI & Quantum Computing</a></li>
-        </ul>
-    </div>
-    
-    <div class="container my-5">
+    </header>
+    <div class="content">
+        <p>Quantum Singularity AI is at the forefront of research in Artificial General Intelligence (AGI) and Quantum Computing. 
+           Our work bridges the gap between cutting-edge AI technologies and the quantum era, driving breakthroughs in computational capabilities.</p>
+        <a href="#contact" class="button">Get in Touch</a>
+        <h2>Latest Research & Publications</h2>
+        <div class="links">
+            <a href="https://arxiv.org/abs/2301.00123" target="_blank">Quantum AI: The Next Evolution - arXiv</a>
+            <a href="https://www.nature.com/articles/s41586-023-00001-1" target="_blank">Nature: Advancements in Quantum Neural Networks</a>
+            <a href="https://ai.googleblog.com/2024/01/quantum-machine-learning-latest.html" target="_blank">Google AI: Quantum Machine Learning Updates</a>
+        </div>
         <h2>Contact Us</h2>
         <p>If you're interested in investing or collaborating, reach out to us.</p>
-        <form action="https://formspree.io/f/example" method="POST">
-            <div class="mb-3">
-                <input type="text" name="name" class="form-control" placeholder="Your Name" required>
-            </div>
-            <div class="mb-3">
-                <input type="email" name="email" class="form-control" placeholder="Your Email" required>
-            </div>
-            <div class="mb-3">
-                <textarea name="message" class="form-control" placeholder="Your Message" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send Message</button>
-        </form>
+        <div class="contact-form" id="contact">
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="button">Send Message</button>
+            </form>
+        </div>
     </div>
-
-    <footer class="text-center py-4">
-        <p>&copy; 2025 Quantum Singularity AI. All rights reserved.</p>
-        <p><small>Disclaimer: Quantum Singularity AI is a conceptual research initiative exploring the future of AI and quantum computing.</small></p>
-    </footer>
+    <div class="footer">
+        <p>© 2025 Quantum Singularity AI. All Rights Reserved.</p>
+        <p>This website is for research and development purposes only.</p>
+    </div>
 </body>
 </html>
