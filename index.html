@@ -40,6 +40,9 @@
         .links { margin-top: 20px; }
         .links a { color: #ffcc00; text-decoration: none; display: block; transition: 0.3s; }
         .links a:hover { text-decoration: underline; }
+        .team-section, .blog-section { margin-top: 40px; }
+        .team-member, .blog-post { background: #00264d; padding: 20px; border-radius: 10px; margin: 20px 0; }
+        .team-member img, .blog-post img { width: 100%; max-width: 200px; border-radius: 10px; }
         @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
     </style>
 </head>
@@ -69,9 +72,42 @@
         </ul>
         
         <h2>Featured Article: The Convergence of AGI and Quantum Computing</h2>
+        <img src="https://via.placeholder.com/900x400" alt="AGI and Quantum Computing Convergence">
         <p>In recent years, the convergence of Artificial General Intelligence (AGI) and Quantum Computing has emerged as a transformative force in technology. Quantum Singularity AI is at the forefront of this revolution, exploring how quantum systems can enhance machine learning models and enable faster, more efficient problem-solving.</p>
         <p>Our research focuses on quantum neural networks, which leverage the principles of superposition and entanglement to process information in ways classical systems cannot. This approach has the potential to revolutionize industries such as healthcare, finance, and climate modeling.</p>
         <p>To learn more, explore our latest publications and join us in shaping the future of technology.</p>
+        
+        <!-- قسم الفريق -->
+        <div class="team-section">
+            <h2>Our Team</h2>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/200" alt="Team Member 1">
+                <h3>Dr. John Doe</h3>
+                <p>Chief Scientist - Quantum Computing</p>
+            </div>
+            <div class="team-member">
+                <img src="https://via.placeholder.com/200" alt="Team Member 2">
+                <h3>Dr. Jane Smith</h3>
+                <p>Lead Researcher - AGI</p>
+            </div>
+        </div>
+        
+        <!-- قسم المدونة -->
+        <div class="blog-section">
+            <h2>Latest Blog Posts</h2>
+            <div class="blog-post">
+                <img src="https://via.placeholder.com/900x400" alt="Blog Post 1">
+                <h3>Quantum AI: The Future is Here</h3>
+                <p>Explore how Quantum AI is transforming industries and what the future holds.</p>
+                <a href="#" class="button">Read More</a>
+            </div>
+            <div class="blog-post">
+                <img src="https://via.placeholder.com/900x400" alt="Blog Post 2">
+                <h3>Advancements in Quantum Neural Networks</h3>
+                <p>Learn about the latest breakthroughs in quantum neural networks.</p>
+                <a href="#" class="button">Read More</a>
+            </div>
+        </div>
         
         <h2>Contact Us</h2>
         <p>Interested in collaborating or learning more about our work? Reach out to us.</p>
