@@ -104,6 +104,30 @@
             color: #3498db;
         }
 
+        /* Sidebar Navigation */
+        .sidebar {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            background: #2c3e50;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar a {
+            display: block;
+            color: #ffffff;
+            margin: 15px 0;
+            font-size: 1.1em;
+            transition: color 0.3s ease;
+        }
+
+        .sidebar a:hover {
+            color: #3498db;
+        }
+
         /* Main Content */
         .content {
             max-width: 1200px;
@@ -214,6 +238,10 @@
             .content {
                 padding: 10px;
             }
+
+            .sidebar {
+                display: none; /* Hide sidebar on small screens */
+            }
         }
 
         /* Animations */
@@ -295,15 +323,15 @@
         <p>Leading the way in Artificial General Intelligence and Quantum Computing</p>
     </header>
 
-    <!-- Navigation -->
-    <nav>
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
         <a href="#about">About Us</a>
         <a href="#research">Research</a>
         <a href="#blog">Blog</a>
         <a href="#article">Article</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
-    </nav>
+    </div>
 
     <!-- Main Content -->
     <div class="content">
