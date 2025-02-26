@@ -22,6 +22,9 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
     <!-- Custom Styles -->
     <style>
         /* Global Styles */
@@ -65,14 +68,14 @@
         /* Header */
         header {
             background: #f8f9fa;
-            padding: 40px 20px;
+            padding: 60px 20px;
             text-align: center;
             color: #2c3e50;
             border-bottom: 1px solid #e0e0e0;
         }
 
         header h1 {
-            font-size: 2.5em;
+            font-size: 3em;
             margin: 0;
             animation: fadeIn 1.5s ease-in-out;
         }
@@ -84,8 +87,8 @@
 
         /* Navigation */
         nav {
-            background: #f8f9fa;
-            padding: 10px;
+            background: #2c3e50;
+            padding: 15px;
             text-align: center;
             border-bottom: 1px solid #e0e0e0;
         }
@@ -93,13 +96,18 @@
         nav a {
             margin: 0 15px;
             font-size: 1.1em;
-            color: #2c3e50;
+            color: #ffffff;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #3498db;
         }
 
         /* Main Content */
         .content {
             max-width: 1200px;
-            margin: 20px auto;
+            margin: 40px auto;
             padding: 20px;
         }
 
@@ -112,10 +120,15 @@
         /* Research Section */
         .research-section {
             background: #f8f9fa;
-            padding: 20px;
+            padding: 30px;
             border-radius: 10px;
-            margin: 20px 0;
+            margin: 30px 0;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .research-section:hover {
+            transform: translateY(-5px);
         }
 
         .research-section h2 {
@@ -129,10 +142,15 @@
         /* Blog Section */
         .blog-post {
             background: #f8f9fa;
-            padding: 20px;
+            padding: 30px;
             border-radius: 10px;
-            margin: 20px 0;
+            margin: 30px 0;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .blog-post:hover {
+            transform: translateY(-5px);
         }
 
         .blog-post img {
@@ -143,9 +161,9 @@
         /* FAQ Section */
         .faq-section {
             background: #f8f9fa;
-            padding: 20px;
+            padding: 30px;
             border-radius: 10px;
-            margin: 20px 0;
+            margin: 30px 0;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
@@ -163,11 +181,11 @@
 
         /* Footer */
         .footer {
-            background: #f8f9fa;
-            padding: 20px;
+            background: #2c3e50;
+            padding: 40px 20px;
             text-align: center;
-            color: #2c3e50;
-            margin-top: 40px;
+            color: #ffffff;
+            margin-top: 60px;
             border-top: 1px solid #e0e0e0;
         }
 
@@ -175,6 +193,11 @@
             display: inline-block;
             margin: 0 10px;
             color: #3498db;
+            transition: color 0.3s ease;
+        }
+
+        .footer .links a:hover {
+            color: #2980b9;
         }
 
         /* Responsive Design */
@@ -202,10 +225,15 @@
         /* Article Section */
         .article-section {
             background: #f8f9fa;
-            padding: 20px;
+            padding: 30px;
             border-radius: 10px;
-            margin: 20px 0;
+            margin: 30px 0;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .article-section:hover {
+            transform: translateY(-5px);
         }
 
         .article-section h2 {
@@ -223,6 +251,40 @@
 
         .article-section a:hover {
             color: #2980b9;
+        }
+
+        /* Contact Form */
+        .contact-form {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 10px;
+            margin: 30px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 1em;
+        }
+
+        .contact-form button {
+            background: #3498db;
+            color: #fff;
+            padding: 12px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            display: inline-block;
+            transition: background 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .contact-form button:hover {
+            background: #2980b9;
         }
     </style>
 </head>
@@ -362,9 +424,9 @@
     <div class="footer">
         <p>© 2025 Quantum Singularity AI. All Rights Reserved.</p>
         <div class="links">
-            <a href="https://www.linkedin.com/company/quantumsingularityai" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-            <a href="https://x.com/QSingularityAi?t=jOlqWHuzMM99ZZ4EUq4eXA&s=09" target="_blank" rel="noopener noreferrer">Twitter</a>
-            <a href="/privacy-policy.html">Privacy Policy</a> | <a href="/terms.html">Terms and Conditions</a>
+            <a href="https://www.linkedin.com/company/quantumsingularityai" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://x.com/QSingularityAi?t=jOlqWHuzMM99ZZ4EUq4eXA&s=09" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i> Twitter</a>
+            <a href="/privacy-policy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a> | <a href="/terms.html"><i class="fas fa-file-contract"></i> Terms and Conditions</a>
         </div>
     </div>
 
