@@ -17,6 +17,7 @@
             line-height: 1.6;
             color: #333;
             background-color: #f5f5f5;
+            direction: ltr;
         }
 
         /* Navbar Styles */
@@ -25,11 +26,11 @@
             justify-content: space-between;
             align-items: center;
             background-color: #032b44;
-            padding: 1rem 2rem;
+            padding: 1rem;
         }
 
         .logo {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
             color: #fff;
             font-weight: bold;
         }
@@ -66,89 +67,55 @@
 
         /* Hero Section */
         .hero-section {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
             text-align: center;
-            padding: 5rem 2rem;
+            padding: 2rem;
             background-color: #032b44;
             color: #fff;
         }
 
-        .hero-content h1 {
-            font-size: 2.5rem;
+        .hero-section h1 {
+            font-size: 1.8rem;
             margin-bottom: 1rem;
         }
 
-        .hero-content p {
-            font-size: 1.2rem;
-            margin-bottom: 2rem;
+        .hero-section p {
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
         }
 
         .hero-image {
             width: 100%;
-            max-width: 900px;
+            max-width: 400px;
             height: auto;
+            margin: 0 auto;
         }
 
-        /* Features Section */
-        .features-section {
-            display: flex;
-            justify-content: space-around;
-            padding: 3rem 2rem;
+        /* Content Sections */
+        section {
+            padding: 2rem;
             background-color: #fff;
+            margin-bottom: 1rem;
         }
 
-        .feature {
-            text-align: center;
-            padding: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            width: 30%;
-        }
-
-        .feature h2 {
+        section h2 {
             font-size: 1.5rem;
             margin-bottom: 1rem;
         }
 
-        /* About Section */
-        .about-section {
-            text-align: center;
-            padding: 3rem 2rem;
-            background-color: #f5f5f5;
+        section p {
+            font-size: 1rem;
+            margin-bottom: 1rem;
         }
 
-        /* Research Section */
-        .research-section {
-            padding: 3rem 2rem;
-            background-color: #fff;
+        .article {
+            margin-bottom: 1.5rem;
         }
 
-        .research-item {
-            margin-bottom: 2rem;
-        }
-
-        /* Partners Section */
-        .partners-section {
-            text-align: center;
-            padding: 3rem 2rem;
-            background-color: #f5f5f5;
-        }
-
-        .partner-logos img {
-            margin: 1rem;
-            width: 150px;
-        }
-
-        /* Blog Section */
-        .blog-section {
-            padding: 3rem 2rem;
-            background-color: #fff;
-        }
-
-        .blog-post {
-            margin-bottom: 2rem;
+        .article img {
+            width: 100%;
+            max-width: 400px;
+            height: auto;
+            margin-bottom: 1rem;
         }
 
         .read-more {
@@ -157,32 +124,17 @@
             font-weight: bold;
         }
 
-        /* Contact Section */
-        .contact-section {
-            text-align: center;
-            padding: 3rem 2rem;
-            background-color: #f5f5f5;
-        }
-
-        .contact-section input,
-        .contact-section textarea {
-            display: block;
-            width: 100%;
-            padding: 0.75rem;
-            margin-bottom: 1rem;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-        }
-
-        /* Footer Section */
+        /* Footer */
         footer {
             text-align: center;
-            padding: 1rem 0;
+            padding: 1rem;
             background-color: #032b44;
             color: #fff;
         }
 
-        .social-links img {
+        footer a {
+            color: #39ff14;
+            text-decoration: none;
             margin: 0 0.5rem;
         }
     </style>
@@ -197,8 +149,6 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#research">Research</a></li>
-                <li><a href="#partners">Partners</a></li>
-                <li><a href="#blog">Blog</a></li>
                 <li><a href="#contact">Contact Us</a></li>
             </ul>
             <button class="cta-button">Get Involved</button>
@@ -207,83 +157,49 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
-        <div class="hero-content">
-            <h1>The Future of Artificial General Intelligence and Quantum Computing</h1>
-            <p>At Quantum Singularity AI, we are leading the way in AGI and Quantum Computing.</p>
-            <button class="cta-button">Learn More</button>
-        </div>
-        <img src="https://via.placeholder.com/900x400" alt="Quantum Computing" class="hero-image">
-    </section>
-
-    <!-- Features Section -->
-    <section id="features" class="features-section">
-        <div class="feature">
-            <h2>Artificial General Intelligence (AGI)</h2>
-            <p>Creating machines that think like humans.</p>
-        </div>
-        <div class="feature">
-            <h2>Quantum Computing</h2>
-            <p>Revolutionizing data processing with quantum mechanics.</p>
-        </div>
-        <div class="feature">
-            <h2>Ethical AI Development</h2>
-            <p>Ensuring safe and responsible use of AI.</p>
-        </div>
+        <h1>The Future of Artificial General Intelligence and Quantum Computing</h1>
+        <p>At Quantum Singularity AI, we are leading the way in AGI and Quantum Computing.</p>
+        <img src="https://via.placeholder.com/400x200" alt="Quantum Computing" class="hero-image">
     </section>
 
     <!-- About Us Section -->
-    <section id="about" class="about-section">
+    <section id="about">
         <h2>About Us</h2>
-        <p>At Quantum Singularity AI, we are a research organization dedicated to developing Artificial General Intelligence (AGI) and Quantum Computing. Our mission is to create transformative technologies that redefine computational capabilities and address complex global challenges.</p>
-        <button class="cta-button">Meet Our Team</button>
+        <p>We are a research organization dedicated to developing Artificial General Intelligence (AGI) and Quantum Computing. Our mission is to create transformative technologies that redefine computational capabilities and address complex global challenges.</p>
+        <button class="cta-button">Learn More</button>
     </section>
 
     <!-- Research Section -->
-    <section id="research" class="research-section">
+    <section id="research">
         <h2>Latest Research and Publications</h2>
-        <div class="research-item">
-            <h3>Quantum Artificial Intelligence: The Next Evolution - arXiv</h3>
-            <p>Discover how quantum AI is transforming industries.</p>
-        </div>
-        <div class="research-item">
-            <h3>Nature: Advances in Quantum Neural Networks</h3>
-            <p>Learn about the latest advancements in quantum neural networks.</p>
-        </div>
-        <div class="research-item">
-            <h3>Google AI: Latest Updates on Quantum Machine Learning</h3>
-            <p>Explore the cutting-edge developments in quantum machine learning.</p>
-        </div>
-    </section>
 
-    <!-- Partners Section -->
-    <section id="partners" class="partners-section">
-        <h2>Our Partners</h2>
-        <div class="partner-logos">
-            <img src="https://via.placeholder.com/150" alt="Partner 1">
-            <img src="https://via.placeholder.com/150" alt="Partner 2">
-            <img src="https://via.placeholder.com/150" alt="Partner 3">
+        <!-- Article 1 -->
+        <div class="article">
+            <img src="https://via.placeholder.com/400x200" alt="Quantum AI">
+            <h3>Quantum AI: The Next Evolution</h3>
+            <p>Quantum computing is revolutionizing artificial intelligence by enabling faster data processing and more efficient algorithms. Learn how quantum AI is transforming industries.</p>
+            <a href="https://arxiv.org/abs/2301.01234" class="read-more">Read More</a>
         </div>
-    </section>
 
-    <!-- Blog Section -->
-    <section id="blog" class="blog-section">
-        <h2>Latest Articles</h2>
-        <div class="blog-post">
-            <img src="https://via.placeholder.com/900x400" alt="Blog Post 1">
-            <h3>Quantum AI: The Future is Here</h3>
-            <p>Discover how quantum AI is transforming industries and what the future holds.</p>
-            <a href="#" class="read-more">Read More</a>
+        <!-- Article 2 -->
+        <div class="article">
+            <img src="https://via.placeholder.com/400x200" alt="Quantum Neural Networks">
+            <h3>Advances in Quantum Neural Networks</h3>
+            <p>Quantum neural networks leverage quantum mechanics to enhance machine learning algorithms. Explore the latest advancements in this field.</p>
+            <a href="https://www.nature.com/articles/s41586-023-01234-5" class="read-more">Read More</a>
         </div>
-        <div class="blog-post">
-            <img src="https://via.placeholder.com/900x400" alt="Blog Post 2">
-            <h3>Advancements in Quantum Neural Networks</h3>
-            <p>Learn about the latest advancements in quantum neural networks.</p>
-            <a href="#" class="read-more">Read More</a>
+
+        <!-- Article 3 -->
+        <div class="article">
+            <img src="https://via.placeholder.com/400x200" alt="Quantum Machine Learning">
+            <h3>Google AI: Quantum Machine Learning</h3>
+            <p>Discover how Google is advancing quantum machine learning to solve complex problems in drug discovery, finance, and beyond.</p>
+            <a href="https://ai.googleblog.com/2023/01/quantum-machine-learning.html" class="read-more">Read More</a>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact-section">
+    <section id="contact">
         <h2>Contact Us</h2>
         <form action="#" method="POST">
             <input type="text" placeholder="Your Name" required>
@@ -296,9 +212,13 @@
     <!-- Footer Section -->
     <footer>
         <p>&copy; 2025 Quantum Singularity AI. All Rights Reserved.</p>
-        <div class="social-links">
-            <a href="#"><img src="https://via.placeholder.com/30" alt="LinkedIn"></a>
-            <a href="#"><img src="https://via.placeholder.com/30" alt="Twitter"></a>
+        <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms and Conditions</a>
+        </div>
+        <div>
+            <a href="https://linkedin.com/company/quantum-singularity-ai" target="_blank">LinkedIn</a>
+            <a href="https://twitter.com/quantumsingularityai" target="_blank">Twitter</a>
         </div>
     </footer>
 
