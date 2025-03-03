@@ -4,435 +4,136 @@
     <!-- SEO Enhancements -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <meta name="description" content="Quantum Singularity AI is a leader in integrating Artificial General Intelligence and Quantum Computing, driving the future of technological evolution.">
-    <meta name="keywords" content="Quantum Computing, Artificial Intelligence, Artificial General Intelligence, Future Technology, AI Research, Quantum AI">
+    <meta name="description" content="Quantum Singularity AI is revolutionizing Artificial General Intelligence and Quantum Computing, driving the next era of innovation.">
+    <meta name="keywords" content="Quantum Computing, Artificial Intelligence, AI Research, Future Technology, AGI, Quantum AI, Deep Learning">
     <meta name="author" content="Quantum Singularity AI">
-    <meta property="og:title" content="Quantum Singularity AI - The Future of Artificial General Intelligence and Quantum Computing">
-    <meta property="og:description" content="Leading innovation in Artificial General Intelligence and Quantum Computing research.">
-    <meta property="og:image" content="https://yourwebsite.com/preview.jpg">
+    <meta property="og:title" content="Quantum Singularity AI - The Future of AGI & Quantum Computing">
+    <meta property="og:description" content="Leading research and innovation in Artificial General Intelligence and Quantum Computing.">
+    <meta property="og:image" content="https://yourwebsite.com/assets/preview.jpg">
     <meta property="og:url" content="https://yourwebsite.com">
     <meta name="robots" content="index, follow">
-    
-    <title>Quantum Singularity AI - The Future of Artificial General Intelligence and Quantum Computing</title>
-    
-    <!-- Google Fonts -->
+
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Quantum Singularity AI",
+      "url": "https://yourwebsite.com",
+      "logo": "https://yourwebsite.com/assets/logo.png",
+      "sameAs": [
+        "https://twitter.com/QSingularityAi",
+        "https://linkedin.com/company/quantumsingularityai"
+      ]
+    }
+    </script>
+
+    <title>Quantum Singularity AI - The Future of AGI & Quantum Computing</title>
+
+    <!-- Google Fonts & Icons -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
     <!-- AOS Animation Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
+
     <!-- Custom Styles -->
-    <style>
-        /* Global Styles */
-        body {
-            font-family: 'Roboto', sans-serif;
-            margin: 0;
-            padding: 0;
-            background: #ffffff;
-            color: #000000;
-            line-height: 1.6;
-        }
-
-        h1, h2, h3 {
-            color: #2c3e50;
-        }
-
-        a {
-            color: #3498db;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-
-        a:hover {
-            color: #2980b9;
-        }
-
-        .button {
-            background: #3498db;
-            color: #fff;
-            padding: 12px 20px;
-            border-radius: 5px;
-            font-weight: bold;
-            display: inline-block;
-            transition: background 0.3s ease;
-        }
-
-        .button:hover {
-            background: #2980b9;
-        }
-
-        /* Header */
-        header {
-            background: #f8f9fa;
-            padding: 60px 20px;
-            text-align: center;
-            color: #2c3e50;
-            border-bottom: 1px solid #e0e0e0;
-        }
-
-        header h1 {
-            font-size: 3em;
-            margin: 0;
-            animation: fadeIn 1.5s ease-in-out;
-        }
-
-        header p {
-            font-size: 1.2em;
-            margin: 10px 0 0;
-        }
-
-        /* Navigation */
-        nav {
-            background: #2c3e50;
-            padding: 15px;
-            text-align: center;
-            border-bottom: 1px solid #e0e0e0;
-        }
-
-        nav a {
-            margin: 0 15px;
-            font-size: 1.1em;
-            color: #ffffff;
-            transition: color 0.3s ease;
-        }
-
-        nav a:hover {
-            color: #3498db;
-        }
-
-        /* Main Content */
-        .content {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        .content img {
-            max-width: 100%;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
-
-        /* Research Section */
-        .research-section {
-            background: #f8f9fa;
-            padding: 30px;
-            border-radius: 10px;
-            margin: 30px 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .research-section:hover {
-            transform: translateY(-5px);
-        }
-
-        .research-section h2 {
-            color: #2c3e50;
-        }
-
-        .research-section p {
-            color: #555;
-        }
-
-        /* Blog Section */
-        .blog-post {
-            background: #f8f9fa;
-            padding: 30px;
-            border-radius: 10px;
-            margin: 30px 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .blog-post:hover {
-            transform: translateY(-5px);
-        }
-
-        .blog-post img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-
-        /* FAQ Section */
-        .faq-section {
-            background: #f8f9fa;
-            padding: 30px;
-            border-radius: 10px;
-            margin: 30px 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .faq-item {
-            margin: 20px 0;
-        }
-
-        .faq-item h3 {
-            color: #2c3e50;
-        }
-
-        .faq-item p {
-            color: #555;
-        }
-
-        /* Footer */
-        .footer {
-            background: #2c3e50;
-            padding: 40px 20px;
-            text-align: center;
-            color: #ffffff;
-            margin-top: 60px;
-            border-top: 1px solid #e0e0e0;
-        }
-
-        .footer .links a {
-            display: inline-block;
-            margin: 0 10px;
-            color: #3498db;
-            transition: color 0.3s ease;
-        }
-
-        .footer .links a:hover {
-            color: #2980b9;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 2em;
-            }
-
-            nav a {
-                display: block;
-                margin: 10px 0;
-            }
-
-            .content {
-                padding: 10px;
-            }
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from { opacity: 0; }
-            to { opacity: 1; }
-        }
-
-        /* Article Section */
-        .article-section {
-            background: #f8f9fa;
-            padding: 30px;
-            border-radius: 10px;
-            margin: 30px 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .article-section:hover {
-            transform: translateY(-5px);
-        }
-
-        .article-section h2 {
-            color: #2c3e50;
-        }
-
-        .article-section p {
-            color: #555;
-        }
-
-        .article-section a {
-            color: #3498db;
-            text-decoration: underline;
-        }
-
-        .article-section a:hover {
-            color: #2980b9;
-        }
-
-        /* Contact Form */
-        .contact-form {
-            background: #f8f9fa;
-            padding: 30px;
-            border-radius: 10px;
-            margin: 30px 0;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-
-        .contact-form input, .contact-form textarea {
-            width: 100%;
-            padding: 10px;
-            margin: 10px 0;
-            border: 1px solid #e0e0e0;
-            border-radius: 5px;
-            font-size: 1em;
-        }
-
-        .contact-form button {
-            background: #3498db;
-            color: #fff;
-            padding: 12px 20px;
-            border-radius: 5px;
-            font-weight: bold;
-            display: inline-block;
-            transition: background 0.3s ease;
-            border: none;
-            cursor: pointer;
-        }
-
-        .contact-form button:hover {
-            background: #2980b9;
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
+
+    <!-- Header with Navigation -->
     <header>
-        <h1>Quantum Singularity AI</h1>
-        <p>Leading the way in Artificial General Intelligence and Quantum Computing</p>
+        <div class="logo"><img src="https://yourwebsite.com/assets/logo.png" alt="Quantum Singularity AI"></div>
+        <nav>
+            <ul class="menu">
+                <li><a href="#about">About</a></li>
+                <li><a href="#research">Research</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#article">Articles</a></li>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="dark-mode-toggle"><i class="fas fa-moon"></i></button>
     </header>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="#about">About Us</a>
-        <a href="#research">Research</a>
-        <a href="#blog">Blog</a>
-        <a href="#article">Article</a>
-        <a href="#faq">FAQ</a>
-        <a href="#contact">Contact</a>
-    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Quantum Singularity AI</h1>
+        <p>Pioneering the future of Artificial General Intelligence & Quantum Computing.</p>
+        <a href="#article" class="button">Read More</a>
+    </section>
 
     <!-- Main Content -->
-    <div class="content">
-        <!-- Article Section -->
+    <main>
         <section id="article">
-            <h2>Artificial Intelligence and Quantum Computing: The Upcoming Technological Revolution</h2>
-            <div class="article-section">
+            <h2>The Convergence of AI and Quantum Computing</h2>
+            <article>
                 <h3>Introduction</h3>
-                <p>In a world where technological advancement is accelerating at an unprecedented pace, two key fields stand out as pillars that will shape the future of humanity: Artificial Intelligence (AI) and Quantum Computing. These fields are not just technological tools; they are driving forces reshaping industries, solving complex problems, and unlocking new frontiers of innovation.</p>
-            </div>
-            <div class="article-section">
-                <h3>What is Artificial Intelligence?</h3>
-                <p>Artificial Intelligence is a branch of computer science aimed at creating systems capable of performing tasks that require human intelligence, such as learning, reasoning, and decision-making. AI is divided into two main types: Narrow AI and Artificial General Intelligence (AGI).</p>
-                <a href="https://www.ibm.com/cloud/learn/what-is-artificial-intelligence" target="_blank" rel="noopener noreferrer">Read More on IBM</a>
-            </div>
-            <div class="article-section">
-                <h3>What is Quantum Computing?</h3>
-                <p>Quantum Computing is a field that relies on the principles of quantum mechanics to process information. Instead of using classical bits (0 or 1), quantum computers use qubits, which can exist in a superposition state, meaning they can be both 0 and 1 simultaneously.</p>
-                <a href="https://azure.microsoft.com/en-us/resources/introduction-to-quantum-computing/" target="_blank" rel="noopener noreferrer">Read More on Microsoft</a>
-            </div>
-            <div class="article-section">
-                <h3>The Convergence of AI and Quantum Computing</h3>
-                <p>When AI and quantum computing come together, immense possibilities emerge. Quantum computing can enhance AI capabilities by speeding up training processes, improving model accuracy, and solving complex problems.</p>
-                <a href="https://arxiv.org/abs/2104.08018" target="_blank" rel="noopener noreferrer">Read More on arXiv</a>
-            </div>
-            <div class="article-section">
-                <h3>The Future of AI and Quantum Computing</h3>
-                <p>As progress continues in these two fields, we can expect radical transformations in many industries, including healthcare, energy, and finance.</p>
-                <a href="https://www.technologyreview.com/2023/01/01/1065624/the-future-of-ai/" target="_blank" rel="noopener noreferrer">Read More on MIT Technology Review</a>
-            </div>
-            <div class="article-section">
-                <h3>Conclusion</h3>
-                <p>Artificial Intelligence and Quantum Computing are technological revolutions that will change the world as we know it. While we face challenges, the opportunities these technologies offer are immense. By investing in research and development, we can harness this power to create a better future for all.</p>
-            </div>
-        </section>
+                <p>Artificial Intelligence and Quantum Computing are two of the most revolutionary fields of our time. When combined, they promise breakthroughs in machine learning, optimization, and complex problem-solving.</p>
 
-        <!-- About Section -->
-        <section id="about">
-            <h2>About Us</h2>
-            <p>At Quantum Singularity AI, we are a research organization dedicated to developing Artificial General Intelligence (AGI) and Quantum Computing. Our mission is to create transformative technologies that redefine computational capabilities and address complex global challenges.</p>
+                <h3>AI and Its Evolution</h3>
+                <p>Artificial Intelligence (AI) has evolved from basic algorithms to complex neural networks capable of performing tasks that require human intelligence. AI is now being used in healthcare, finance, and even space exploration.</p>
+
+                <h3>How Quantum Computing Enhances AI</h3>
+                <p>Quantum Computing, with its ability to process vast amounts of data simultaneously, can drastically improve AI models. Quantum Machine Learning (QML) is expected to revolutionize how we analyze data.</p>
+
+                <h3>The Future of AI & Quantum Computing</h3>
+                <p>As technology advances, AI and Quantum Computing will lead to discoveries that were once thought impossible, transforming industries worldwide.</p>
+
+                <a href="https://www.technologyreview.com" target="_blank" class="button">Learn More</a>
+            </article>
         </section>
 
         <!-- Research Section -->
         <section id="research">
-            <h2>Latest Research and Publications</h2>
-            <div class="research-section">
-                <h3>Quantum Artificial Intelligence: The Next Evolution</h3>
-                <p>Our research focuses on integrating quantum computing with artificial intelligence to achieve breakthroughs in computational power and problem-solving capabilities.</p>
-                <a href="https://arxiv.org/abs/2301.00123" target="_blank" rel="noopener noreferrer" class="button">Read on arXiv</a>
-            </div>
-            <div class="research-section">
-                <h3>Advances in Quantum Neural Networks</h3>
-                <p>We explore the potential of quantum neural networks to revolutionize machine learning and data analysis.</p>
-                <a href="https://www.nature.com/articles/s41586-023-00001-1" target="_blank" rel="noopener noreferrer" class="button">Read on Nature</a>
-            </div>
-        </section>
-
-        <!-- Blog Section -->
-        <section id="blog">
-            <h2>Latest Articles</h2>
-            <div class="blog-post" data-aos="fade-up">
-                <img src="https://via.placeholder.com/900x400" alt="Article 1" loading="lazy">
-                <h3>Quantum AI: The Future is Here</h3>
-                <p>Discover how quantum AI is transforming industries and what the future holds.</p>
-                <a href="#" class="button">Read More</a>
-            </div>
-            <div class="blog-post" data-aos="fade-up">
-                <img src="https://via.placeholder.com/900x400" alt="Article 2" loading="lazy">
-                <h3>Advancements in Quantum Neural Networks</h3>
-                <p>Learn about the latest advancements in quantum neural networks.</p>
-                <a href="#" class="button">Read More</a>
+            <h2>Latest Research</h2>
+            <div class="research-item">
+                <h3>Quantum Neural Networks</h3>
+                <p>Our research focuses on building quantum-powered neural networks to enhance AI capabilities.</p>
+                <a href="https://arxiv.org/abs/2301.00123" target="_blank" class="button">Read More</a>
             </div>
         </section>
 
         <!-- FAQ Section -->
         <section id="faq">
             <h2>Frequently Asked Questions</h2>
-            <div class="faq-section">
-                <div class="faq-item">
-                    <h3>What is Artificial General Intelligence?</h3>
-                    <p>Artificial General Intelligence (AGI) is a type of AI that is capable of performing any intellectual task that a human can do.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>How does Quantum Computing work?</h3>
-                    <p>Quantum computing relies on the principles of quantum mechanics, such as superposition and entanglement, to process information in ways that are impossible for classical computers.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>What are Quantum Neural Networks?</h3>
-                    <p>Quantum Neural Networks (QNNs) are a type of artificial neural network that utilizes quantum computing to enhance learning algorithms and provide more efficient solutions.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>What are the challenges facing quantum AI?</h3>
-                    <p>Challenges include quantum stability, high costs, and a lack of experts in both AI and quantum computing.</p>
-                </div>
-                <div class="faq-item">
-                    <h3>How can AI benefit healthcare?</h3>
-                    <p>AI can analyze medical data to diagnose diseases accurately, improve cancer treatments, and even predict pandemics.</p>
-                </div>
+            <div class="faq-item">
+                <h3>What is AGI?</h3>
+                <p>Artificial General Intelligence (AGI) refers to AI systems with human-like intelligence.</p>
             </div>
         </section>
 
         <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Us</h2>
-            <p>Interested in collaboration or learning more about our work? Get in touch with us.</p>
-            <div class="contact-form">
-                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-                    <input type="text" name="name" placeholder="Your Name" required>
-                    <input type="email" name="email" placeholder="Your Email" required>
-                    <textarea name="message" placeholder="Your Message" required></textarea>
-                    <button type="submit" class="button">Send Message</button>
-                </form>
-            </div>
+            <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="button">Send Message</button>
+            </form>
         </section>
-    </div>
+    </main>
 
     <!-- Footer -->
-    <div class="footer">
-        <p>© 2025 Quantum Singularity AI. All Rights Reserved.</p>
-        <div class="links">
-            <a href="https://www.linkedin.com/company/quantumsingularityai" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> LinkedIn</a>
-            <a href="https://x.com/QSingularityAi?t=jOlqWHuzMM99ZZ4EUq4eXA&s=09" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i> Twitter</a>
-            <a href="/privacy-policy.html"><i class="fas fa-shield-alt"></i> Privacy Policy</a> | <a href="/terms.html"><i class="fas fa-file-contract"></i> Terms and Conditions</a>
+    <footer>
+        <p>&copy; 2025 Quantum Singularity AI. All Rights Reserved.</p>
+        <div class="social-links">
+            <a href="https://twitter.com/QSingularityAi" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="https://linkedin.com/company/quantumsingularityai" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
-    </div>
+    </footer>
 
     <!-- Initialize AOS -->
     <script>
         AOS.init();
+        document.getElementById("dark-mode-toggle").addEventListener("click", function() {
+            document.body.classList.toggle("dark-mode");
+        });
     </script>
+
 </body>
 </html>
