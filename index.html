@@ -24,25 +24,25 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            padding: 10px; /* تقليص الهامش للهاتف */
+            padding: 10px;
         }
         .container {
             width: 100%;
-            max-width: 350px; /* تقليص العرض ليناسب شاشات الهواتف الصغيرة */
+            max-width: 350px;
             padding: 10px;
         }
         .header {
             margin-bottom: 15px;
         }
         h1 {
-            font-size: 28px; /* تقليص الحجم ليناسب الهاتف */
+            font-size: 28px;
             color: #00d4ff;
             text-shadow: 0 0 8px rgba(0, 212, 255, 0.7);
             line-height: 1.2;
-            word-break: break-word; /* تمكين كسر الكلمات لتجنب التمرير الأفقي */
+            word-break: break-word;
         }
         .tagline {
-            font-size: 16px; /* تقليص الحجم للهاتف */
+            font-size: 16px;
             color: #e0e0e0;
             margin-bottom: 10px;
         }
@@ -51,7 +51,7 @@
             padding: 10px;
             border-radius: 6px;
             margin-bottom: 15px;
-            font-size: 12px; /* تقليص الحجم للهاتف */
+            font-size: 12px;
             color: #d0d0d0;
             line-height: 1.4;
         }
@@ -87,15 +87,23 @@
             font-size: 14px;
             font-weight: bold;
             cursor: pointer;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s, transform 0.1s;
         }
         button:hover {
             background-color: #00a3cc;
+        }
+        button:active {
+            transform: scale(0.98); /* تأثير عند الضغط */
         }
         .form-text {
             font-size: 11px;
             margin-top: 8px;
             color: #b0b0b0;
+        }
+        .form-note {
+            font-size: 10px;
+            color: #a0a0a0;
+            margin-top: 5px;
         }
         .footer {
             margin-top: 15px;
@@ -103,7 +111,6 @@
             color: #a0a0a0;
         }
         @media (min-width: 600px) {
-            /* تحسينات إضافية للشاشات الكبيرة */
             .container {
                 max-width: 450px;
             }
@@ -133,7 +140,7 @@
             <p class="tagline">The Intersection of Quantum Computing and Artificial General Intelligence</p>
         </div>
         <div class="value-section">
-            <p>Why QuantumSingularity.ai? This domain offers a unique branding opportunity at the crossroads of quantum computing and AGI, two rapidly evolving fields. It is available for purchase and could serve as a strategic asset for tech companies or investors looking to establish a forward-thinking online presence.</p>
+            <p>Why QuantumSingularity.ai? This domain offers a unique branding opportunity at the crossroads of quantum computing and AGI, two rapidly evolving fields projected to reach a combined market value of over $1 trillion by 2030 (Source: Market Research Reports). It is available for purchase and could serve as a strategic asset for tech companies or investors looking to establish a forward-thinking online presence.</p>
         </div>
         <div class="form-box">
             <form action="https://formspree.io/f/mnnpajwj" method="POST">
@@ -143,6 +150,7 @@
                 <input type="hidden" name="_next" value="https://quantumsingularity.ai/thank-you.html">
             </form>
             <p class="form-text">Interested in this domain? Contact us for offers or inquiries.</p>
+            <p class="form-note">All submissions are securely sent to our sales team for review.</p>
         </div>
         <div class="footer">
             © 2025 QuantumSingularity.ai | All Rights Reserved
