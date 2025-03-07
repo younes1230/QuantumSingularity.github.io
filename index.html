@@ -43,14 +43,14 @@
             margin-bottom: 15px;
         }
         h1 {
-            font-size: 28px;
+            font-size: 26px; /* تقليل الحجم قليلاً على الهواتف */
             color: #00d4ff;
             text-shadow: 0 0 8px rgba(0, 212, 255, 0.7);
             line-height: 1.2;
             word-break: break-word;
         }
         .tagline {
-            font-size: 16px;
+            font-size: 14px; /* تقليل الحجم على الهواتف */
             color: #e0e0e0;
             margin-bottom: 10px;
         }
@@ -149,6 +149,36 @@
             }
             button {
                 font-size: 16px;
+            }
+        }
+        /* إضافة دعم لشاشات صغيرة جدًا (مثل هواتف أقل من 320px) */
+        @media (max-width: 320px) {
+            h1 {
+                font-size: 22px;
+            }
+            .tagline {
+                font-size: 12px;
+            }
+            .value-section {
+                font-size: 11px;
+                padding: 8px;
+            }
+            .form-box {
+                padding: 10px;
+            }
+            input[type="email"], input[type="text"], textarea {
+                font-size: 12px;
+                padding: 8px;
+            }
+            button {
+                font-size: 12px;
+                padding: 8px;
+            }
+            .form-text {
+                font-size: 10px;
+            }
+            .form-note {
+                font-size: 9px;
             }
         }
     </style>
