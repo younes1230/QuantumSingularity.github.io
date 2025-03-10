@@ -56,7 +56,7 @@
         h2 { 
             font-size: 2em; 
             margin-top: 30px; 
-            color: #4ecdc4; /* لون أخضر ناعم حديث */
+            color: #4ecdc4; 
         }
         h3 { 
             font-size: 1.6em; 
@@ -73,7 +73,7 @@
             padding: 0 20px; 
         }
         .button { 
-            background: #f28c38; /* برتقالي دافئ عصري */
+            background: #4ecdc4; /* أخضر موحد */
             color: #fff; 
             padding: 12px 25px; 
             text-decoration: none; 
@@ -84,22 +84,22 @@
             transition: background 0.3s ease; 
         }
         .button:hover { 
-            background: #d97706; /* لون أغمق عند التمرير */
+            background: #45b7ad; /* لون أخضر أغمق عند التمرير */
         }
         .footer { 
             padding: 30px; 
-            background: #101720; /* أسود غامق حديث */
+            background: #101720; 
             text-align: center; 
             font-size: 0.95em; 
         }
         .links a { 
-            color: #f28c38; /* مطابق للأزرار */
+            color: #4ecdc4; /* أخضر موحد */
             text-decoration: none; 
             margin: 0 10px; 
             transition: color 0.3s ease; 
         }
         .links a:hover { 
-            color: #4ecdc4; /* تحول إلى الأخضر عند التمرير */
+            color: #45b7ad; /* تحول إلى أخضر أغمق عند التمرير */
             text-decoration: underline; 
         }
         @keyframes fadeIn { 
@@ -117,8 +117,21 @@
             .button { padding: 10px 20px; font-size: 0.9em; }
             header { padding: 15px; }
             .footer { padding: 20px; }
-            form { max-width: 100%; }
-            input, textarea { font-size: 0.9em; padding: 10px; }
+            form { 
+                max-width: 100%; 
+                margin: 20px 0; 
+            }
+            input, textarea { 
+                width: 100%; 
+                padding: 10px; 
+                margin-bottom: 10px; 
+                border: none; 
+                border-radius: 5px; 
+                font-size: 0.9em; 
+                background: #fff; 
+                color: #333; 
+            }
+            textarea { min-height: 100px; }
         }
         @media (max-width: 480px) {
             h1 { font-size: 1.5em; }
@@ -126,6 +139,7 @@
             h3 { font-size: 1.2em; }
             p { font-size: 0.9em; }
             .button { padding: 8px 15px; font-size: 0.85em; }
+            .links a { display: block; margin: 5px 0; }
         }
     </style>
 </head>
@@ -201,11 +215,11 @@
 
         <!-- Contact Us Section -->
         <h2>Contact Us</h2>
-        <p>Have questions or interested in collaborating? Reach out to us—we’d love to hear from you.</p>
+        <p>Have questions or interested in collaborating? Reach out to us—we'd love to hear from you.</p>
         <form action="https://formspree.io/f/mdkeooez" method="POST" style="max-width: 600px; margin: 20px auto;">
-            <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: none; border-radius: 5px; font-size: 1em;">
-            <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: none; border-radius: 5px; font-size: 1em;">
-            <textarea name="message" placeholder="Your Message" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: none; border-radius: 5px; font-size: 1em; min-height: 120px;"></textarea>
+            <input type="text" name="name" placeholder="Your Name" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: none; border-radius: 5px; font-size: 1em; background: #fff; color: #333;">
+            <input type="email" name="email" placeholder="Your Email" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: none; border-radius: 5px; font-size: 1em; background: #fff; color: #333;">
+            <textarea name="message" placeholder="Your Message" required style="width: 100%; padding: 12px; margin-bottom: 15px; border: none; border-radius: 5px; font-size: 1em; min-height: 120px; background: #fff; color: #333;"></textarea>
             <button type="submit" class="button">Send Message</button>
         </form>
     </div>
