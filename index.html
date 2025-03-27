@@ -193,7 +193,8 @@
         }
         .logo {
             font-family: var(--font-headings);
-            font-size: 1.5rem;
+            /* font-size: 1.5rem; */ /* Original Size */
+            font-size: 1.35rem; /* Reduced Size as requested */
             font-weight: 700;
             color: var(--text-headings); /* Brighter logo text */
             text-decoration: none;
@@ -204,8 +205,10 @@
         }
         .nav-links {
             list-style: none;
-            display: flex;
+            display: flex; /* Display flex by default for desktop */
             gap: 35px; /* Slightly more gap */
+            margin: 0; /* Reset margin */
+            padding: 0; /* Reset padding */
         }
         .nav-links a {
             color: var(--text-light); /* Use standard light text */
@@ -235,7 +238,7 @@
             text-decoration: none;
         }
         .menu-toggle {
-            display: none;
+            display: none; /* Hidden by default on larger screens */
             background: none;
             border: none;
             color: var(--text-light);
@@ -477,11 +480,14 @@
              h1 { font-size: clamp(2.2rem, 5vw + 1rem, 3.5rem); }
              h2 { font-size: clamp(1.8rem, 4vw + 0.5rem, 2.5rem); }
 
-            /* Mobile Menu */
+            /* Mobile Menu Styles */
+            .menu-toggle {
+                display: block; /* Show hamburger icon on mobile */
+            }
             .nav-links {
-                display: none;
+                display: none; /* Hide links by default on mobile */
                 position: absolute;
-                top: 100%;
+                top: 100%; /* Position below navbar */
                 left: 0;
                 width: 100%;
                 background-color: var(--secondary-dark); /* Use secondary dark */
@@ -493,7 +499,7 @@
                 box-shadow: 0 8px 16px rgba(0,0,0,0.2);
             }
             .nav-links.active {
-                display: flex;
+                display: flex; /* Show when active class is added by JS */
             }
             .nav-links li {
                 margin-bottom: 15px;
@@ -502,9 +508,7 @@
                  padding: 10px 0; /* Easier tapping */
              }
              .nav-links a::after { bottom: 0; } /* Adjust underline position */
-            .menu-toggle {
-                display: block;
-            }
+
             .contact-form { max-width: 90%; }
             #why-us div[style*="flex: 1"] { min-width: 100%; } /* Stack cards on mobile */
         }
@@ -560,7 +564,8 @@
                 <p data-aos="fade-up" data-aos-delay="100">Quantum Singularity AI is more than a research entity; we are architects of a transformative future. We stand at the critical intersection of <strong>Artificial General Intelligence (AGI)</strong> and <strong>Quantum Computing</strong>, driven by the conviction that their synergy holds the key to solving humanity's most profound challenges.</p>
                 <p data-aos="fade-up" data-aos-delay="200">Our interdisciplinary team of experts delves into the fundamental principles and practical applications of quantum-enhanced AI, striving to unlock unprecedented computational power and cognitive capabilities. We are committed to responsible innovation, ensuring ethical considerations guide our path towards a future where technology empowers humanity.</p>
                 <div class="text-center" data-aos="fade-up" data-aos-delay="300">
-                   <a href="/about-detailed.html" class="button button-secondary">Learn More About Our Mission</a> <!-- Placeholder for a detailed About page -->
+                   <!-- FIX: Changed href to prevent 404 error, points to a non-existent ID as a placeholder -->
+                   <a href="#about-detailed-placeholder" class="button button-secondary" title="Detailed About page coming soon">Learn More About Our Mission</a>
                 </div>
             </div>
         </section>
@@ -664,7 +669,8 @@
                 <p data-aos="fade-up" data-aos-delay="100" style="color: var(--text-medium);">Stay updated with our latest research findings, articles, and perspectives on the evolving landscape of quantum AI and the singularity. (Blog section coming soon)</p>
                 <!-- Placeholder for blog post previews -->
                 <div style="margin-top: 40px; text-align: center;" data-aos="fade-up" data-aos-delay="200">
-                     <a href="/blog" class="button button-secondary">Visit Our Blog (Coming Soon)</a>
+                     <!-- FIX: Changed href to prevent 404 error, points to a non-existent ID as a placeholder -->
+                     <a href="#blog-placeholder" class="button button-secondary" title="Blog coming soon">Visit Our Blog (Coming Soon)</a>
                 </div>
              </div>
         </section>
@@ -704,8 +710,9 @@
                  <!-- Example: <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a> -->
             </div>
             <div class="footer-links">
-                <a href="/privacy-policy.html">Privacy Policy</a>
-                <a href="/terms.html">Terms of Service</a> <!-- Changed from T&C -->
+                <!-- FIX: Changed hrefs to prevent 404 errors, point to non-existent IDs as placeholders -->
+                <a href="#privacy-placeholder" title="Privacy Policy coming soon">Privacy Policy</a>
+                <a href="#terms-placeholder" title="Terms of Service coming soon">Terms of Service</a> <!-- Changed from T&C -->
                 <a href="#contact">Contact Us</a>
             </div>
             <p>© <span id="current-year"></span> Quantum Singularity AI. All Rights Reserved.</p>
@@ -726,11 +733,12 @@
         });
 
         // Mobile Menu Toggle
+        // FIX: Ensured IDs match and logic is correct. Should work as intended.
         const menuToggle = document.getElementById('menu-toggle');
         const navLinks = document.getElementById('nav-links');
 
         menuToggle.addEventListener('click', () => {
-            navLinks.classList.toggle('active');
+            navLinks.classList.toggle('active'); // Toggles the 'active' class on the nav links container
             const expanded = navLinks.classList.contains('active');
             menuToggle.setAttribute('aria-expanded', expanded);
             // Change icon to 'X' when menu is open
@@ -740,6 +748,7 @@
         // Close menu when a link is clicked
         navLinks.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', () => {
+                // Check if the menu is currently active (mobile view)
                 if (navLinks.classList.contains('active')) {
                     navLinks.classList.remove('active');
                     menuToggle.setAttribute('aria-expanded', 'false');
