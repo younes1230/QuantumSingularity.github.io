@@ -54,19 +54,18 @@
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "name": "Quantum Singularity", // Updated Name
+      "name": "Quantum Singularity",
       "url": "https://yourwebsite.com",
-      "logo": "https://yourwebsite.com/assets/images/logo.png", // Suggestion: Add a logo URL
+      "logo": "https://yourwebsite.com/assets/images/logo.png",
       "description": "A research organization pioneering the integration of Artificial General Intelligence (AGI) and Quantum Computing.",
       "contactPoint": {
         "@type": "ContactPoint",
-        "contactType": "General Inquiry", // Changed type slightly
-        "email": "info@yourwebsite.com" // Suggestion: Add a contact email
+        "contactType": "General Inquiry",
+        "email": "info@yourwebsite.com"
       },
       "sameAs": [
-        "https://www.linkedin.com/company/quantumsingularityai", // Keep existing handles for now, update if they change
+        "https://www.linkedin.com/company/quantumsingularityai",
         "https://x.com/QSingularityAi"
-        // Add other social media profiles if available
       ]
     }
     </script>
@@ -90,7 +89,6 @@
 
             --font-primary: 'Roboto', sans-serif;
             --font-headings: 'Exo 2', sans-serif;
-             /* ** Added Distinctive Logo Font ** */
             --font-logo: 'Orbitron', sans-serif;
             --container-width: 1200px;
         }
@@ -107,11 +105,25 @@
         }
         body {
             font-family: var(--font-primary);
-            background-color: var(--primary-dark);
+            /* New space-themed background */
+            background: url('https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+            background-size: cover; /* Ensures full screen coverage */
             color: var(--text-light);
             line-height: 1.7;
             overflow-x: hidden; /* Prevent horizontal scroll */
             text-align: left; /* Default text align */
+            position: relative; /* Allows for the overlay */
+        }
+        /* Dark transparent overlay to improve text readability */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(13, 17, 23, 0.5); /* Dark overlay with 50% opacity */
+            z-index: -1; /* Places it behind the content */
         }
         img, picture, video, canvas, svg {
           display: block;
@@ -482,7 +494,6 @@
             .logo { font-size: 1.3rem; letter-spacing: 1px; }
             .section-bg { padding: 25px; }
         }
-
     </style>
 </head>
 <body>
@@ -589,7 +600,6 @@
                             <li>Vinge, V. (1993). The Coming Technological Singularity: How to Survive in the Post-Human Era. <em>Whole Earth Review</em>.</li>
                             <li>Bostrom, N. (2014). <em>Superintelligence: Paths, Dangers, Strategies</em>. Oxford University Press.</li>
                             <li>Preskill, J. (2018). Quantum Computing in the NISQ era and beyond. <em>Quantum</em>, 2, 79. <a href="https://quantum-journal.org/papers/q-2018-08-06-79/" target="_blank" rel="noopener noreferrer">https://quantum-journal.org/papers/q-2018-08-06-79/</a>.</li>
-                            <!-- Add more relevant and recent references if possible -->
                         </ol>
                     </div>
                 </article>
@@ -656,15 +666,12 @@
             <div class="social-links">
                 <a href="https://www.linkedin.com/company/quantumsingularityai" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                 <a href="https://x.com/QSingularityAi" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
-                <!-- Add other social links like GitHub if applicable -->
-                 <!-- Example: <a href="https://github.com/your-org" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a> -->
             </div>
             <div class="footer-links">
                 <a href="/privacy-policy.html">Privacy Policy</a>
                 <a href="/terms.html">Terms and Conditions</a>
                 <a href="#contact">Contact Us</a>
             </div>
-             <!-- ** Updated Copyright Text ** -->
             <p>© <span id="current-year"></span> Quantum Singularity. All Rights Reserved.</p>
             <p style="font-size: 0.8em;">For research, development, and informational purposes. We currently hold no commercial affiliations unless explicitly stated.</p>
         </div>
@@ -707,7 +714,6 @@
 
         // Update Footer Year
         document.getElementById('current-year').textContent = new Date().getFullYear();
-
     </script>
 </body>
 </html>
