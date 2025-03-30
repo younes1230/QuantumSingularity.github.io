@@ -12,15 +12,15 @@
     <!-- Open Graph / Social Media -->
     <meta property="og:title" content="Quantum Singularity - Pioneering AGI & Quantum Computing">
     <meta property="og:description" content="Advancing humanity through cutting-edge research at the intersection of Artificial General Intelligence and Quantum Computing.">
-    <meta property="og:image" content="https://yourwebsite.com/assets/images/og-preview.jpg"> <!-- Suggestion: Create a compelling preview image -->
+    <meta property="og:image" content="https://yourwebsite.com/assets/images/og-preview.jpg">
     <meta property="og:url" content="https://yourwebsite.com">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="Quantum Singularity">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:site" content="@QSingularityAi"> <!-- Assuming this is your Twitter handle -->
+    <meta name="twitter:site" content="@QSingularityAi">
     <meta name="twitter:title" content="Quantum Singularity - Pioneering AGI & Quantum Computing">
     <meta name="twitter:description" content="Explore the future of technology where AGI meets Quantum Computing.">
-    <meta name="twitter:image" content="https://yourwebsite.com/assets/images/twitter-preview.jpg"> <!-- Suggestion: Create a Twitter-specific preview image -->
+    <meta name="twitter:image" content="https://yourwebsite.com/assets/images/twitter-preview.jpg">
 
     <title>Quantum Singularity - Pioneering Artificial General Intelligence and Quantum Computing</title>
 
@@ -36,7 +36,6 @@
     <link rel="preconnect" href="https://unpkg.com">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"></noscript>
-    <!-- Updated Font Selection: Added Orbitron for logo -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Exo+2:wght@700&family=Orbitron:wght@700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
@@ -74,19 +73,17 @@
     <style>
         :root {
             /* ** Updated Color Palette for a more professional tech feel ** */
-            --primary-dark: #0D1117; /* Very dark, slightly desaturated blue/grey (like GitHub dark) */
-            --secondary-dark: #161B22; /* Slightly lighter dark grey */
-            --accent-color: #58A6FF; /* Bright, accessible blue (GitHub blue) */
-            --accent-hover: #2F81F7; /* Slightly darker blue for hover */
-            --accent-secondary: #BF87FF; /* A secondary accent (violet) for highlights if needed */
-            --text-light: #C9D1D9; /* Light grey text */
-            --text-medium: #8B949E; /* Medium grey text */
-            --text-dark: #24292F; /* Dark grey for light backgrounds (if any) */
-            --border-color: #30363D; /* Subtle border color */
-
-            --header-gradient: linear-gradient(135deg, #161B22, #0D1117); /* Updated gradient */
-            --section-bg: rgba(22, 27, 34, 0.5); /* Subtle background using secondary dark */
-
+            --primary-dark: #0D1117;
+            --secondary-dark: #161B22;
+            --accent-color: #58A6FF;
+            --accent-hover: #2F81F7;
+            --accent-secondary: #BF87FF;
+            --text-light: #C9D1D9;
+            --text-medium: #8B949E;
+            --text-dark: #24292F;
+            --border-color: #30363D;
+            --header-gradient: linear-gradient(135deg, #161B22, #0D1117);
+            --section-bg: rgba(22, 27, 34, 0.5);
             --font-primary: 'Roboto', sans-serif;
             --font-headings: 'Exo 2', sans-serif;
             --font-logo: 'Orbitron', sans-serif;
@@ -101,18 +98,31 @@
         }
         html {
             scroll-behavior: smooth;
-            font-size: 16px; /* Base font size */
+            font-size: 16px;
         }
         body {
             font-family: var(--font-primary);
-            /* New space-themed background */
+            /* Default Background: Vast Space with Stars */
             background: url('https://images.unsplash.com/photo-1464802686167-b939a6910659?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
-            background-size: cover; /* Ensures full screen coverage */
+            background-size: cover;
             color: var(--text-light);
             line-height: 1.7;
-            overflow-x: hidden; /* Prevent horizontal scroll */
-            text-align: left; /* Default text align */
-            position: relative; /* Allows for the overlay */
+            overflow-x: hidden;
+            text-align: left;
+            position: relative;
+            /*
+            Option 1: AGI-themed Background (Neural Network Visualization)
+            background: url('https://images.unsplash.com/photo-1635070041078-e363dbe005cb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+            background-size: cover;
+            
+            Option 2: Black Hole Background
+            background: url('https://images.unsplash.com/photo-1538378918-3de659966b09?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+            background-size: cover;
+            
+            Option 3: Quantum Computer Background
+            background: url('https://images.unsplash.com/photo-1624969862293-d3c0f69e83af?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80') no-repeat center center fixed;
+            background-size: cover;
+            */
         }
         /* Dark transparent overlay to improve text readability */
         body::before {
@@ -122,8 +132,8 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(13, 17, 23, 0.5); /* Dark overlay with 50% opacity */
-            z-index: -1; /* Places it behind the content */
+            background: rgba(13, 17, 23, 0.5);
+            z-index: -1;
         }
         img, picture, video, canvas, svg {
           display: block;
@@ -156,12 +166,10 @@
             line-height: 1.3;
         }
         h1 { font-size: clamp(2.5rem, 5vw + 1rem, 4rem); animation: fadeIn 1.5s ease-out; }
-        /* H2 uses main accent color */
         h2 { font-size: clamp(2rem, 4vw + 0.5rem, 2.8rem); color: var(--accent-color); }
         h3 { font-size: clamp(1.5rem, 3vw + 0.5rem, 2rem); }
         h4 { font-size: clamp(1.2rem, 2.5vw + 0.3rem, 1.6rem); color: var(--text-medium); }
         p { font-size: clamp(1rem, 1.5vw + 0.5rem, 1.1rem); margin-bottom: 1.5em; color: var(--text-medium); }
-        /* Updated strong tag to use secondary accent for variety */
         strong { color: var(--accent-secondary); font-weight: 700; }
         em { color: var(--text-light); font-style: italic; }
         ul, ol { margin-left: 25px; margin-bottom: 1.5em; color: var(--text-medium); }
@@ -170,10 +178,10 @@
         /* Header & Navigation */
         .site-header {
             background: var(--header-gradient);
-            padding: 80px 0 100px 0; /* Increased padding */
+            padding: 80px 0 100px 0;
             text-align: center;
             position: relative;
-            border-bottom: 1px solid var(--border-color); /* Add subtle border */
+            border-bottom: 1px solid var(--border-color);
         }
         .site-header h1 {
             margin-bottom: 0.3em;
@@ -186,7 +194,7 @@
         }
 
         .navbar {
-            background-color: rgba(13, 17, 23, 0.85); /* Use primary dark with alpha */
+            background-color: rgba(13, 17, 23, 0.85);
             backdrop-filter: blur(10px);
             padding: 15px 0;
             position: sticky;
@@ -194,7 +202,7 @@
             z-index: 1000;
             width: 100%;
             transition: background-color 0.3s ease;
-            border-bottom: 1px solid var(--border-color); /* Add subtle border */
+            border-bottom: 1px solid var(--border-color);
         }
         .navbar-container {
             display: flex;
@@ -204,15 +212,14 @@
             margin: 0 auto;
             padding: 0 20px;
         }
-        /* ** Updated Logo Styling ** */
         .logo {
-            font-family: var(--font-logo); /* Use Orbitron */
-            font-size: 1.5rem; /* Slightly smaller for balance */
+            font-family: var(--font-logo);
+            font-size: 1.5rem;
             font-weight: 700;
             color: var(--text-light);
             text-decoration: none;
-            text-transform: uppercase; /* Uppercase for tech look */
-            letter-spacing: 1.5px; /* Add spacing */
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
             transition: color 0.3s ease;
         }
         .logo:hover {
@@ -226,8 +233,8 @@
         }
         .nav-links a {
             color: var(--text-light);
-            font-weight: 700; /* Keep bold */
-            font-size: 0.95rem; /* Slightly reduce size */
+            font-weight: 700;
+            font-size: 0.95rem;
             text-decoration: none;
             padding: 5px 0;
             position: relative;
@@ -252,7 +259,7 @@
             text-decoration: none;
         }
         .menu-toggle {
-            display: none; /* Hidden by default */
+            display: none;
             background: none;
             border: none;
             color: var(--text-light);
@@ -265,28 +272,28 @@
             padding: 60px 0;
         }
         section {
-            padding: 70px 0; /* Slightly increased padding */
-            border-bottom: 1px solid var(--border-color); /* Use border variable */
+            padding: 70px 0;
+            border-bottom: 1px solid var(--border-color);
         }
         section:last-of-type {
             border-bottom: none;
         }
         .section-bg {
            background-color: var(--section-bg);
-           border: 1px solid var(--border-color); /* Add border */
+           border: 1px solid var(--border-color);
            border-radius: 8px;
-           padding: 50px; /* Increased padding */
-           margin-bottom: 50px; /* Increased margin */
+           padding: 50px;
+           margin-bottom: 50px;
         }
 
         /* Buttons */
         .button {
             background: var(--accent-color);
-            color: var(--primary-dark); /* Dark text on light button */
-            padding: 12px 28px; /* Slightly adjusted padding */
+            color: var(--primary-dark);
+            padding: 12px 28px;
             text-decoration: none;
             font-weight: bold;
-            border-radius: 6px; /* Slightly less rounded */
+            border-radius: 6px;
             display: inline-block;
             margin-top: 20px;
             transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
@@ -294,14 +301,14 @@
             cursor: pointer;
             font-size: 1rem;
             text-align: center;
-            box-shadow: 0 1px 3px rgba(0,0,0,0.1); /* Subtle shadow */
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
         }
         .button:hover {
             background: var(--accent-hover);
-            color: var(--text-light); /* Lighter text on hover */
-            transform: translateY(-2px); /* Slightly less lift */
+            color: var(--text-light);
+            transform: translateY(-2px);
             text-decoration: none;
-            box-shadow: 0 4px 10px rgba(88, 166, 255, 0.25); /* Updated shadow color */
+            box-shadow: 0 4px 10px rgba(88, 166, 255, 0.25);
         }
         .button-secondary {
             background: transparent;
@@ -309,18 +316,17 @@
             border: 1px solid var(--accent-color);
         }
         .button-secondary:hover {
-            background: rgba(88, 166, 255, 0.1); /* Subtle background on hover */
-            color: var(--accent-color); /* Keep accent color */
-             border-color: var(--accent-hover); /* Darken border */
+            background: rgba(88, 166, 255, 0.1);
+            color: var(--accent-color);
+            border-color: var(--accent-hover);
         }
 
         /* Article Specific Styling */
         article img {
             margin: 30px 0;
             border-radius: 8px;
-            border: 1px solid var(--border-color); /* Add border to image */
-            /* box-shadow: 0 10px 30px rgba(0,0,0,0.3); */ /* Soften shadow */
-             box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            border: 1px solid var(--border-color);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
         }
         article h3 {
             margin-top: 40px;
@@ -336,7 +342,7 @@
           color: var(--text-medium);
           margin-top: 40px;
           padding-top: 20px;
-          border-top: 1px solid var(--border-color); /* Use border variable */
+          border-top: 1px solid var(--border-color);
         }
         .references h3 {
           font-size: 1.4em;
@@ -362,8 +368,8 @@
         .contact-form textarea {
             width: 100%;
             padding: 15px;
-            border: 1px solid var(--border-color); /* Use border variable */
-            border-radius: 6px; /* Match button radius */
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
             font-size: 1rem;
             background: var(--secondary-dark);
             color: var(--text-light);
@@ -378,14 +384,14 @@
         .contact-form textarea:focus {
             outline: none;
             border-color: var(--accent-color);
-            box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.2); /* Updated focus ring */
+            box-shadow: 0 0 0 3px rgba(88, 166, 255, 0.2);
         }
         .contact-form textarea {
             min-height: 150px;
             resize: vertical;
         }
         .contact-form button {
-            align-self: center; /* Center button */
+            align-self: center;
         }
         .contact-note {
             font-size: 0.9em;
@@ -394,28 +400,27 @@
             text-align: center;
         }
         .contact-note span {
-            /* Using secondary accent here for the highlighted text */
             color: var(--accent-secondary);
             font-weight: bold;
         }
 
         /* Footer */
         .site-footer {
-            padding: 50px 0 40px 0; /* Adjusted padding */
-            background: var(--primary-dark); /* Match body background */
-            border-top: 1px solid var(--border-color); /* Use border variable */
+            padding: 50px 0 40px 0;
+            background: var(--primary-dark);
+            border-top: 1px solid var(--border-color);
             text-align: center;
-            font-size: 0.9rem; /* Slightly smaller */
+            font-size: 0.9rem;
             color: var(--text-medium);
         }
         .footer-content {
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 25px; /* Increased gap */
+            gap: 25px;
         }
         .footer-links {
-            margin-top: 0; /* Removed top margin */
+            margin-top: 0;
         }
         .footer-links a {
             color: var(--text-medium);
@@ -428,7 +433,7 @@
             text-decoration: underline;
         }
         .social-links a {
-            font-size: 1.4rem; /* Slightly smaller */
+            font-size: 1.4rem;
             margin: 0 12px;
             color: var(--text-medium);
             transition: color 0.3s ease;
@@ -455,15 +460,13 @@
             html { font-size: 15px; }
             .site-header { padding: 60px 0 80px 0; }
             main, section { padding: 50px 0; }
-
-            /* Mobile Menu */
             .nav-links {
-                display: none; /* Hide links by default */
+                display: none;
                 position: absolute;
-                top: 100%; /* Position below navbar */
+                top: 100%;
                 left: 0;
                 width: 100%;
-                background-color: var(--secondary-dark); /* Use secondary dark */
+                background-color: var(--secondary-dark);
                 flex-direction: column;
                 padding: 20px 0;
                 text-align: center;
@@ -471,14 +474,14 @@
                 border-top: 1px solid var(--border-color);
             }
             .nav-links.active {
-                display: flex; /* Show when active */
+                display: flex;
             }
             .nav-links li {
                 margin-bottom: 15px;
             }
             .nav-links a { font-size: 1rem; }
             .menu-toggle {
-                display: block; /* Show hamburger icon */
+                display: block;
             }
             .contact-form { max-width: 90%; }
             .section-bg { padding: 30px; }
@@ -501,7 +504,6 @@
     <!-- Navigation Bar -->
     <nav class="navbar" aria-label="Main Navigation">
         <div class="navbar-container">
-            <!-- ** Updated Logo Text ** -->
             <a href="/" class="logo">Quantum Singularity</a>
             <button class="menu-toggle" id="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
                 <i class="fas fa-bars"></i>
@@ -519,7 +521,6 @@
     <!-- Hero Header -->
     <header class="site-header" role="banner">
         <div class="container">
-            <!-- ** Updated Title Text (removed AI) ** -->
             <h1>Quantum Singularity</h1>
             <p class="tagline">Architecting the Nexus of Intelligence: Fusing Quantum Power with Artificial General Intelligence</p>
             <a href="#research" class="button">Explore Our Vision</a>
@@ -535,7 +536,7 @@
                 <p data-aos="fade-up" data-aos-delay="100">Quantum Singularity is more than a research entity; we are architects of a transformative future. We stand at the critical intersection of <strong>Artificial General Intelligence (AGI)</strong> and <strong>Quantum Computing</strong>, driven by the conviction that their synergy holds the key to solving humanity's most profound challenges.</p>
                 <p data-aos="fade-up" data-aos-delay="200">Our interdisciplinary team of experts delves into the fundamental principles and practical applications of quantum-enhanced AI, striving to unlock unprecedented computational power and cognitive capabilities. We are committed to responsible innovation, ensuring ethical considerations guide our path towards a future where technology empowers humanity.</p>
                 <div class="text-center" data-aos="fade-up" data-aos-delay="300">
-                   <a href="/about-detailed.html" class="button button-secondary">Learn More About Our Mission</a> <!-- Placeholder for a detailed About page -->
+                   <a href="/about-detailed.html" class="button button-secondary">Learn More About Our Mission</a>
                 </div>
             </div>
         </section>
@@ -545,7 +546,6 @@
             <div class="container">
                 <h2 data-aos="fade-up">The Convergence: Quantum, AI, and Singularity</h2>
                 <article>
-                    <!-- Updated Placeholder Image Colors -->
                     <img src="https://via.placeholder.com/900x400/161B22/58A6FF?text=Quantum+AI+Convergence" alt="Abstract visualization representing the convergence of quantum mechanics and artificial intelligence neural networks" loading="lazy" data-aos="zoom-in">
 
                     <h3 data-aos="fade-up">Introduction: A Paradigm Shift in Progress</h3>
@@ -612,7 +612,6 @@
                  <h2 data-aos="fade-up">Why Quantum Singularity?</h2>
                  <p data-aos="fade-up" data-aos-delay="100" style="max-width: 800px; margin-left: auto; margin-right: auto;">We operate at the bleeding edge, uniquely positioned to bridge the gap between theoretical quantum mechanics and practical artificial intelligence. Our approach is defined by:</p>
                  <div style="display: flex; flex-wrap: wrap; gap: 30px; justify-content: center; margin-top: 40px;">
-                    <!-- Icons use accent color -->
                     <div style="flex: 1; min-width: 280px; text-align: center;" data-aos="fade-up" data-aos-delay="200">
                         <i class="fas fa-brain fa-3x" style="color: var(--accent-color); margin-bottom: 15px;"></i>
                         <h4>Interdisciplinary Expertise</h4>
@@ -637,7 +636,6 @@
              <div class="container">
                 <h2 data-aos="fade-up">Recent Insights</h2>
                 <p data-aos="fade-up" data-aos-delay="100" style="color: var(--text-medium);">Stay updated with our latest research findings, articles, and perspectives on the evolving landscape of quantum AI and the singularity. (Blog section coming soon)</p>
-                <!-- Placeholder for blog post previews -->
                 <div style="margin-top: 30px; text-align: center;" data-aos="fade-up" data-aos-delay="200">
                      <a href="/blog" class="button button-secondary">Visit Our Blog (Coming Soon)</a>
                 </div>
@@ -682,9 +680,9 @@
     <script>
         // Initialize AOS (Animate on Scroll)
         AOS.init({
-            duration: 700, // Slightly faster animation
-            once: true, // Animate elements only once
-            offset: 50 // Trigger animations slightly earlier
+            duration: 700,
+            once: true,
+            offset: 50
         });
 
         // Mobile Menu Toggle
@@ -695,20 +693,17 @@
             navLinks.classList.toggle('active');
             const expanded = navLinks.classList.contains('active');
             menuToggle.setAttribute('aria-expanded', expanded);
-            // Optional: Change icon to 'X' when menu is open
             menuToggle.innerHTML = expanded ? '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
         });
 
         // Close menu when a link is clicked
         navLinks.querySelectorAll('a').forEach(link => {
             link.addEventListener('click', (e) => {
-                // Only close if it's a hash link on the same page
                 if (link.getAttribute('href').startsWith('#') && navLinks.classList.contains('active')) {
                     navLinks.classList.remove('active');
                     menuToggle.setAttribute('aria-expanded', 'false');
                     menuToggle.innerHTML = '<i class="fas fa-bars"></i>';
                 }
-                // Allow default behavior for external links or different pages
             });
         });
 
