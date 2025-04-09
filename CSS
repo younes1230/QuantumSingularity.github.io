@@ -1,0 +1,8 @@
+.site-header {
+    background: linear-gradient(rgba(13, 17, 23, 0.7), rgba(13, 17, 23, 0.7)), url('assets/images/space-universe.jpg') no-repeat center center;
+    background-size: cover;
+    padding: 80px 0 100px 0;
+    text-align: center;
+    position: relative;
+    border-bottom: 1px solid var(--border-color);
+}
